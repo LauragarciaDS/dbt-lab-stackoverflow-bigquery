@@ -1,10 +1,10 @@
-version: 2   # aqui es de donde sacara los datos
+version: 2  
 
 sources:
   - name: raw
-    schema: stackoverflow #Dataset name - BigQuery, tiene q ser el mismo nombre q hay en BQ
+    schema: stackoverflow #Dataset name - BigQuery
     tables:
-      - name: badges   # nombres de los datasets en bq, si se añade una nueva en bq, hay que referenciarlo aquí para poder usarlo.
+      - name: badges   
       - name: posts_answers
       - name: posts_questions
       - name: users
