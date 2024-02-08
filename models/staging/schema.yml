@@ -1,9 +1,9 @@
-version: 2   # la configuración para los 4 modelos que se encuentran dentro de esta carpeta staging, y las pruebas de calidad.
+version: 2   
 
 models:
   - name: stg_badges
     columns:
-      - name: user_id     # atributo/columna
+      - name: user_id     
         tests:
           - not_null
   - name: stg_posts_answers
@@ -15,7 +15,7 @@ models:
       - name: type
         tests:
           - accepted_values:
-              values: ['answer']   # si existe un valor diferente a answer, el modelo se va a caer.
+              values: ['answer']   
       - name: owner_user_id
         tests:
           - relationships:
